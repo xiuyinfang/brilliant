@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于我们</title>
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" text="text/css" href="jq/jquery-ui-1.12.0.custom/jquery-ui.css" >
+    <!-- 引入ui插件样式表 -->
+    <script type="text/javascript" src="jq/jquery-ui-1.12.0.custom/external/jquery/jquery.js"></script>
+    <!-- 引入JQ库文件 -->
+    <script type="text/javascript" src="jq/jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+    <!-- 引入JQ UI插件文件 -->
+    <script type="text/javascript" src="js/about.js"></script>
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+	<div class="nav_bar">
+		<img src="images/logo.PNG" alt="">
+		<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="ulist"><a href="news.html">新闻</a>
+				<ul class="list">
+                        <li><a href="#">&nbsp;天文&nbsp;&nbsp;·&nbsp;&nbsp;物理&nbsp;</a></li>
+                        <li><a href="#">&nbsp;生物&nbsp;&nbsp;·&nbsp;&nbsp;医学&nbsp;</a></li>
+                        <li><a href="#">&nbsp;材料&nbsp;&nbsp;·&nbsp;&nbsp;化学&nbsp;</a></li>
+                        <li><a href="#">&nbsp;心理&nbsp;&nbsp;·&nbsp;&nbsp;人物&nbsp;</a></li>
+                        <li><a href="#">&nbsp;地球&nbsp;&nbsp;·&nbsp;&nbsp;自然&nbsp;</a></li>
+                        <li><a href="#">&nbsp;信息&nbsp;&nbsp;·&nbsp;&nbsp;能源&nbsp;</a></li>
+                    </ul></li>
+				<li><a href="course.html">课程</a></li>
+				<li><a href="shop.html">商城</a></li>
+				<li><a href="member.html">会员管理</a></li>
+				<li><a href="about.html">关于我们</a></li>
+		</ul>
+			<button id="zc">免费注册</button>
+			<button id="login">登录</button>
+	</div>
+	</div>
+<!-- nav -->
+	<div class="nav">
+		<img src="images/index_header.PNG" alt="">
+		<p>科学，照亮黑暗的蜡烛</p>
+	</div>
+<!-- banner -->
+	<div class="banner">
+			<h1>我们❤学习</h1><br>
+			<p>我们在这里激发您的好奇心，并<br>
+			以数学，科学和计算机科学的美丽激发您的灵感。</p>
+	</div>
+<!-- content -->
+	<div class="content">
+		<div class="content_header">
+			<p><i>“头脑不是要装满的器皿，而是要点燃的火。”</i></p>
+			<p><i>—普鲁塔克</i></p>
+		</div>
+
+		<div class="content_yuanze">
+			<h1>我们的原则</h1><br>
+			<p>Brilliant创造了一种围绕探究，好奇心和对失败开放的学习文化。我们所有</p>
+			<p>课程的编写都遵循这些学习原则。</p>
+		</div>
+
+		<div class="content_study">
+			<h3>有效的数学和科学学习…</h3>
+			<ul>
+				<li>
+					<h1>1</h1>
+					<h3>激动人心。</h3>
+					<p>教育的最大挑战是无私和冷漠。</p>
+				</li>
+
+				<li>
+					<h1>2</h1>
+					<h3>培养好奇心。</h3>
+					<p>培养自然好奇心的问题比考试的威胁要好。</p>
+				</li>
+
+				<li>
+					<h1>3</h1>
+					<h3>活跃。</h3>
+					<p>有效的学习是主动的，不是被动的。观看视频还不够。</p>
+				</li>
+
+				<li>
+					<h1>4</h1>
+					<h3>适用。</h3>
+					<p>使用它或失去它：在学习时应用所学内容至关重要。</p>
+				</li>
+
+				<li>
+					<h1>5</h1>
+					<h3>是社区驱动的。</h3>
+					<p>挑战并激发您的社区是非常宝贵的。</p>
+				</li>
+
+				<li>
+					<h1>6</h1>
+					<h3>不歧视。</h3>
+					<p>您的年龄，国家/地区和性别不会决定您的学习能力。</p>
+				</li>
+
+				<li>
+					<h1>7</h1>
+					<h3>允许失败。</h3>
+					<p>最好的学习者会在旅途中犯很多错误。</p>
+				</li>
+
+				<li>
+					<h1>8</h1>
+					<h3>引发问题。</h3>
+					<p>伟大的教育的顶峰不是知道所有的答案，而是知道要问什么</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 用户留言 -->
+	<div class="message">
+		<h4>请给我们留言</h4>
+		<p>(请写下您宝贵的建议)</p>
+		<br>
+		<span>
+			<form>
+				姓名：<input type="text" id="name"><br><br>
+				性别：<label><input id="sex" name="sex" type="radio"/>男</label>
+				&nbsp;&nbsp;&nbsp;
+				<label><input id="sex" name="sex" type="radio"/>女</label><br><br>
+				邮箱：<input type="email" placeholder="123456@qq.com" id="email"><br><br>
+				关于网站，您的更多看法和建议：<br><br>
+				<textarea rows="6" cols="50" name="advice" onblur="checkLen()"></textarea>
+				<span id="advice"></span>
+				<br>
+				<button id="tijiao" type="reset" onClick="tijiao()">提交</button>
+				<button id="quxiao" type="reset">取消</button>
+			</form>
+		</span>
+	</div>
+
+<!-- footer -->
+	<div class="footer">
+		<p>“很多学生在采用讲授式教学的科学、工程和数学课程中不及格，</p>
+		<p>而在采用所谓主动学习法的课程中不及格的人数要多得多。</p>
+		<p>主动学习法要求学生参与讨论和解决问题，超出他们的记忆范围。”</p>
+		<br>
+		<p>— 足够演讲，美国国家科学基金会</p>
+	</div>
+ <script type="text/javascript">
+  $(".nav_bar").find(".ulist").mouseenter(function(){
+   $(this).find(".list").stop().slideDown(500);
+   }).mouseleave(function(){
+     $(this).find(".list").stop().slideUp(500);
+     $(this).css("background","#e60ceb");
+ })
+   </script>
+
+	<!-- 引入页面相应的js -->
+	<script src="js/about.js"></script>
+
+</body>
+</html>

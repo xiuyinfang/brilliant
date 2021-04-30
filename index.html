@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Brilliant</title>
+	<link rel="stylesheet" href="css/index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<img src="images/index_header.PNG" alt="">
+		<p>科学，照亮黑暗的蜡烛</p>
+	</div>
+	<!-- content -->
+	<div class="content">
+		<!-- nav -->
+		<div class="nav">
+			<img src="images/logo.PNG" alt="">
+			<button id="login">登录</button>
+		</div>
+		<!-- 登录窗口 -->
+		<div class="loginDiv">
+			<img src="images/login.gif">
+			<div class="login-in">
+				<p>登录</p>
+				<input id="lg-input1" type="text" placeholder="Email"onblur="email()" name="email"><span></span>
+				<input id="lg-input2" type="password" placeholder="Password" onblur="password()" name="password"><span></span>
+				<input id="lg-btn1" type="submit" value="登录">
+
+				<input id="lg-btn2" type="submit" value="取消">
+			</div>
+		</div>
+		<!-- banner -->
+		<div class="banner">
+			<!-- 左边 -->
+			<div class="banner_left">
+				<h1>学会思考</h1>
+				<br>
+				<p>通过有趣且具有挑战性的互动探索，建立数学，科学和计算机科学</p>
+				<p>方面的定量技能。</p>
+				<br><br>
+				<button id="zc">免费注册</button>
+			</div>
+			<!-- 注册窗口 -->
+		<div class="zcDiv">
+			<img src="images/login-.gif">
+			<div class="zc-in">
+			<p>注册</p>
+			<input id="zc-input1" placeholder="Email" name="zc-email" onblur="zcEmail()"><span></span>
+			<input id="zc-input2" placeholder="Password" name="zc-pwd" onblur="zcPassword()"><span></span>
+			<input id="zc-input3" placeholder="First name" name="fname" onblur="fName()"><span></span>
+			<input id="zc-input4" placeholder="Last name" name="lname" onblur="lName()"><span></span>
+			<div class="birth">
+            <p>birthday:</p><input type="date" id="datePicker"/>
+			</div>
+			<button id="zc-btn1">注册</button><br>
+			<button id="zc-btn2">取消</button>
+			</div>
+			</div>
+			<!-- 右边 -->
+			<div id="banner_right" class="banner_right">
+				<div class="bd">
+				<!-- 轮播的图片数量=真正播放的图片数量+2 -->
+				<ul class="imgList">
+				    <li><a href="#"><img src="images/nav_lb5.png"></a></li>
+					<li><a href="#"><img src="images/nav_lb1.png"></a></li>
+					<li><a href="#"><img src="images/nav_lb2.png"></a></li>
+					<li><a href="#"><img src="images/nav_lb3.png"></a></li>
+					<li><a href="#"><img src="images/nav_lb4.png"></a></li>
+					<li><a href="#"><img src="images/nav_lb5.png"></a></li>
+					<li><a href="#"><img src="images/nav_lb1.png"></a></li>
+				</ul>
+			<!-- 对应的圆点数量=真正播放的图片数量-->
+			<ul>
+				<li class="now"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="nav_bar">
+			<ul>
+                <li><a href="index.html">首页</a></li>
+                <li class="ulist"><a href="news.html">新闻</a>
+             <!--    <ul class="list">
+                        <li><a href="news.html">&nbsp;天文&nbsp;&nbsp;·&nbsp;&nbsp;物理&nbsp;</a></li>
+                        <li><a href="news.html">&nbsp;生物&nbsp;&nbsp;·&nbsp;&nbsp;医学&nbsp;</a></li>
+                        <li><a href="news.html">&nbsp;材料&nbsp;&nbsp;·&nbsp;&nbsp;化学&nbsp;</a></li>
+                        <li><a href="news.html">&nbsp;心理&nbsp;&nbsp;·&nbsp;&nbsp;人物&nbsp;</a></li>
+                        <li><a href="news.html">&nbsp;地球&nbsp;&nbsp;·&nbsp;&nbsp;自然&nbsp;</a></li>
+                        <li><a href="news.html">&nbsp;信息&nbsp;&nbsp;·&nbsp;&nbsp;能源&nbsp;</a></li>
+                    </ul> --></li>
+                <li><a href="course.html">课程</a></li>
+                <li><a href="shop.html">商城</a></li>
+                <li><a href="member.html">会员管理</a></li>
+                <li><a href="about.html">关于我们</a></li>
+        </ul>
+		</div>
+		<!-- 内容区 -->
+		<div class="main">
+			<div class="main1">
+				<img src="images/index-main1.gif">
+				<h2>通过实践学习</h2>
+				<p>通过互动式问题解决来学习–事实证明，这种方法 比讲座 <u>更有效</u>。Brilliant会指导您解决问
+				题的策略，并挑战您跳出框框思考。</p>
+			</div>
+			<div class="main2">
+				<h2>一生的学习</h2>
+				<p>初学者从Brilliant的课程库开始，或者直接进入面向专业人士<br>和终身学习者的中级和高级课程。Brilliant适用于10至110岁<br>的有抱负和好奇心的人。</p>
+				<img src="images/index-main2.png">
+			</div>
+			<div class="main3">
+				<img src="images/index-main3.png">
+				<h2>内置❤️</h2>
+				<p>我们所有的课程都是由MIT，加州理工学院，杜克大学，微软，谷歌等公司的获奖教师，研究人员和专业人员精心制作的。我们的方法获得了成千上万的五星级评价。</p>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<h1>终生学习&nbsp;&nbsp;&nbsp;向死而生</h1>
+        <h2>Study as if you were to live forever , live as if you were to die tomorrow. </h2>
+		<!-- <p>18JAVA(1)班</p>
+		<p>20185533151&nbsp;&nbsp;柯清清</p>
+		<p>20185533152&nbsp;&nbsp;房秀银</p>
+		<p>20185533503&nbsp;&nbsp;周&nbsp;&nbsp;&nbsp;琴</p>
+		<p>&copy;广东农工商职业技术学院</p> -->
+	</div>
+	<link rel="stylesheet" text="text/css" href="jq/jquery-ui-1.12.0.custom/jquery-ui.css" >
+	<script src="js/index.js"></script>
+     <!-- 引入ui插件样式表 -->
+    <script type="text/javascript" src="jq/jquery-ui-1.12.0.custom/external/jquery/jquery.js"></script>
+    <!-- 引入JQ库文件 -->
+    <script type="text/javascript" src="jq/jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+    <!-- 引入JQ UI插件文件 -->
+    <script type="text/javascript">
+    $(function(){
+    	$("#login").button();  //登录
+    	$("#zc").button();  //免费注册
+    	$("#lg-btn1").button();
+    	$("#lg-btn2").button();
+    	$("#zc-btn1").button();
+    	$("#zc-btn2").button();
+    	$("#Birth-month").selectmenu();
+    	$("#Day").selectmenu();
+    	$("#Year").selectmenu();
+    })
+    //下拉菜单
+      $(".nav_bar").find(".ulist").mouseenter(function(){
+   $(this).find(".list").stop().slideDown(500);
+   }).mouseleave(function(){
+     $(this).find(".list").stop().slideUp(500);
+     $(this).css("background","#e60ceb");
+ })
+     $( "#accordion" ).accordion();
+ //登录界面
+ // 点击登录
+    $("#login").click(function(){
+        $("<div class='mask'></div>").appendTo($("body"));
+        var maskHeight=$(document).height();
+        var maskWidth=$(document).width();
+        $(".mask").css({
+            "position":"absolute",
+            "left":0,
+            "top":0,
+            "width":maskWidth,
+            "height":maskHeight,
+            "background":"#000",
+            "opacity":0.4,
+            "z-index":1
+        })
+     $(".loginDiv").show();
+    })
+
+
+	function email(){
+		var mail=$("input[name=email]").val();
+		if(mail.length>=10 && mail.length<=20){
+			$("span:eq(0)").text("填写正确").css({"color":"green"});
+		}else{
+			$("span:eq(0)").text("填写错误").css({"color":"red"});
+		}
+	}
+	function password(){
+		var pwd=$("input[name=password]").val();
+		if(pwd.length>=6 && pwd.length<=12){
+			$("span:eq(1)").text("填写正确").css({"color":"green"});
+		}else{
+			$("span:eq(1)").text("填写错误").css({"color":"red"});
+		}
+	}
+
+	$("#lg-btn1").click(function(){
+		if($("span:eq(0)").text()=="填写错误" || $("span:eq(1)").text()=="填写错误"){
+			var message="请重新填写";
+		alert(message);
+		$("span:eq(0)").text("");
+    	$("span:eq(1)").text("");
+    	$("#lg-input1").val("");
+    	$("#lg-input2").val("");
+		}else{
+			var message="登录成功！";
+			alert(message);
+		$(".loginDiv").hide();
+    	$(".mask").remove();
+    	$("span:eq(0)").text("");
+    	$("span:eq(1)").text("");
+    	$("#lg-input1").val("");
+    	$("#lg-input2").val("");
+		}
+	})
+
+	 $("#lg-btn2").click(function(){
+    	$(".loginDiv").hide();
+    	$(".mask").remove();
+    	$("span:eq(0)").text("");
+    	$("span:eq(1)").text("");
+    	$("#lg-input1").val("");
+    	$("#lg-input2").val("");
+
+    })
+
+//注册界面
+// 点击注册
+	 $("#zc").click(function(){
+	 	$("<div class='mask'></div>").appendTo($("body"));
+        var maskHeight=$(document).height();
+        var maskWidth=$(document).width();
+        $(".mask").css({
+            "position":"absolute",
+            "left":0,
+            "top":0,
+            "width":maskWidth,
+            "height":maskHeight,
+            "background":"#000",
+            "opacity":0.4,
+            "z-index":0
+        })
+     $(".zcDiv").show();
+	 })
+//邮箱
+	 function zcEmail(){
+	 	$.ajax({
+	 		type:"get",
+	 		url:"index.txt",
+	 		success:function(data){
+	 			var usedId = data;
+	 			var arrId = usedId.split(",");
+	 			var flag = true;
+	 			for(var i=0;i<arrId.length;i++){
+	 				if(arrId[i] == $("input[name=zc-email").val()){
+	 					flag=false;
+	 					break;
+	 				}
+	 			}
+	 			if(flag){
+	 				$("input[name=zc-email").next('span').text("填写正确").css("color","green");
+	 			}else{
+	 				$("input[name=zc-email]").next('span').text("邮箱存在").css("color","red");
+	 			}
+	 		}
+	 	})
+	 }
+//密码
+	function zcPassword(){
+		var pwd =$("input[name=zc-pwd]").val();
+		if(pwd.length >=6 && pwd.length <=15){
+		$("input[name=zc-pwd").next('span').text("填写正确").css("color","green");
+     }else{
+     	$("input[name=zc-pwd").next('span').text("填写错误").css("color","red");
+		}
+	}
+//Firstname
+	function fName(){
+		var fn =$("input[name=fname]").val();
+		if(fn.length >=3 && fn.length <=50){
+     	$("input[name=fname").next('span').text("填写正确").css("color","green");
+     }else{
+     	$("input[name=fname").next('span').text("填写错误").css("color","red");
+     }
+	}
+//Lastname
+	function lName(){
+		var ln =$("input[name=lname]").val();
+		if(ln.length >=3 && ln.length <=50){
+     	$("input[name=lname").next('span').text("填写正确").css("color","green");
+     }else{
+     	$("input[name=lname").next('span').text("填写错误").css("color","red");
+     }
+	}
+//注册按钮
+	$("#zc-btn1").click(function(){
+		if($("span:eq(2)").text()=="邮箱存在" || $("span:eq(3)").text()=="填写错误" || $("span:eq(4)").text()=="填写错误" || $("span:eq(5)").text()=="填写错误"){
+			var message="请重新填写";
+		alert(message);
+		$("span:eq(2)").text("");
+    	$("span:eq(3)").text("");
+    	$("span:eq(4)").text("");
+    	$("span:eq(5)").text("");
+    	$("#zc-input1").val("");
+    	$("#zc-input2").val("");
+    	$("#zc-input3").val("");
+    	$("#zc-input4").val("");
+	}else{
+		var message="恭喜你注册成功！";
+			alert(message);
+		$(".zcDiv").hide();
+    	$(".mask").remove();
+    	$("span:eq(2)").text("");
+    	$("span:eq(3)").text("");
+    	$("span:eq(4)").text("");
+    	$("span:eq(5)").text("");
+    	$("#zc-input1").val("");
+    	$("#zc-input2").val("");
+    	$("#zc-input3").val("");
+    	$("#zc-input4").val("");
+}
+	})
+//取消按钮
+$("#zc-btn2").click(function(){
+		$(".zcDiv").hide();
+    	$(".mask").remove();
+    	$("span:eq(2)").text("");
+    	$("span:eq(3)").text("");
+    	$("span:eq(4)").text("");
+    	$("span:eq(5)").text("");
+    	$("#zc-input1").val("");
+    	$("#zc-input2").val("");
+    	$("#zc-input3").val("");
+    	$("#zc-input4").val("");
+	})
+    </script>
+
+</body>
+</html>

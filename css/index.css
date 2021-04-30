@@ -1,0 +1,452 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 50px;
+	background: #3a7cc0;
+	z-index: 999;
+}
+.header>img{
+	height: 50.6px;
+	float: left;
+}
+.header>p{
+	color: #fff;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.content{
+	width: 75%;
+	margin: 0 auto;
+}
+/*nav_bar*/
+.nav_bar{
+    height: 300px;
+    width: 100%;
+}
+//导航栏没有图片标签
+// .nav_bar>img{
+//     float: left;
+//     margin-left: 150px;
+// }
+.nav_bar>ul>li>a{
+    margin-top: 10px;
+    float: left;
+  //  margin: 25px 60px 0 70px;
+    color: #ccc;
+    // 改字体改不了
+}
+.nav_bar>ul>li.ulist>ul.list{
+    position: relative;
+    float: left;
+    margin-left:-65px;
+    margin-top: 50px;
+    background-color: #fff;
+    z-index: 999;
+}
+.nav_bar ul li.ulist ul.list {
+    display: none;
+}
+.list>li>a{
+    font-size: 10px;
+    color:black;
+}
+.nav_bar>ul>li>a:hover{
+    color: #000;
+    background-color: #dcdcdc;
+
+}
+ul.list>li>a:hover{
+    color: #d3d3d3;
+    z-index: 999;
+}
+/*nav*/
+.content>.nav{
+	width: 100%;
+	height: 50px;
+	padding-top: 8px;
+}
+.nav_fixed{
+	position: fixed;
+	left: 0;
+	top: 0;
+	background:#fff;
+	z-index: 999;  /*显示在最前面*/
+}
+.content>.nav>img{
+	height: 50px;
+	float: left;
+}
+.content>.nav>button{
+	color: #ccc;
+	float: right;
+}
+/*登录窗口*/
+.content>.loginDiv{
+	position: relative;
+	width: 810px;
+	height: 500px;
+	margin: auto;
+	display: none;
+	z-index: 10;
+	background: #fff;
+}
+.content>.loginDiv>img{
+	background: black;
+	width:400px;
+	height:500px;
+}
+.content>.loginDiv>.login-in{
+	width: 400px;
+	height: 500px;
+	float: right;
+}
+.content>.loginDiv>.login-in>p{
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	margin-top: 50px;
+}
+/*输入框*/
+.content>.loginDiv>.login-in #lg-input1{
+	width:220px;
+	height: 30px;
+	border-radius: 2px;
+	margin:50px 0 0 80px;
+}
+.content>.loginDiv>.login-in #lg-input2{
+	width:220px;
+	height: 30px;
+	border-radius: 2px;
+	margin:50px 0 0 80px;
+}
+/*登录button*/
+.content>.loginDiv>.login-in #lg-btn1{
+	width: 100px;
+	margin:70px 0 0 82px;
+
+}
+/*取消button*/
+.content>.loginDiv>.login-in #lg-btn2{
+	width: 100px;
+	margin:70px 0 0 18px;
+}
+/*注册窗口*/
+.zcDiv{
+	position: relative;
+	width: 810px;
+	height: 500px;
+	margin: auto;
+	display: none;
+	z-index: 10;
+	background:#fff;
+}
+.zcDiv>img{
+	background: black;
+	width:400px;
+	height:500px;
+	margin: -420px 0 0 0;
+}
+.zcDiv>.zc-in{
+	width: 410px;
+	height: 500px;
+	margin: -504px 0 0 400px;
+}
+.zcDiv>.zc-in>p{
+	font-size: 30px;
+	width: 200px;
+	height: 50px;
+	color: #000;
+	text-align: center;
+	margin: 35px auto;
+}
+.zcDiv>.zc-in>#zc-input1{
+	width:255px;
+	height: 30px;
+	border-radius: 2px;
+	margin: 10px 0 10px -30px;
+}
+.zcDiv>.zc-in>#zc-input2{
+	width:255px;
+	height: 30px;
+	border-radius: 2px;
+	margin: 10px 0 10px -30px;
+}
+.zcDiv>.zc-in>#zc-input3{
+	width:255px;
+	height: 30px;
+	border-radius: 2px;
+	margin: 10px 0 0 -30px;
+}
+.zcDiv>.zc-in>#zc-input4{
+	width:255px;
+	height: 30px;
+	border-radius: 2px;
+	margin: 0 0 10px -30px;
+}
+.zcDiv>.zc-in>.birth{
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+}
+.zcDiv>.zc-in>.birth>p{
+	display: inline;
+}
+#zc-btn1{
+	width: 255px;
+	margin: 20px 0 0 -8px;
+	background: #000;
+	color: #fff;
+}
+#zc-btn1:hover{
+	background: #fff;
+	color: #000;
+}
+#zc-btn2{
+	width: 255px;
+	margin: 20px 0 0 97px;
+}
+/*banner*/
+.banner{
+	width: 100%;
+	height: 300px;
+}
+/*左边*/
+.banner>.banner_left{
+	width: 50%;
+	height: 300px;
+	margin: 120px 0 0 100px;
+	float: left;
+}
+.banner>.banner_left>h1{
+	font-size: 50px;
+}
+.banner>.banner_left>p{
+	color: #7e7c7c;
+}
+.banner>.banner_left>button{
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	width: 200px;
+	height: 70px;
+	border-radius: 10px;
+}
+.banner>.banner_left>button:hover{
+	background: #fff;
+	color: #000;
+}
+/*右边*/
+.banner>.banner_right{
+	float: left;
+	width: 240px;
+	height: 380px;
+	overflow: hidden;
+	position: relative;
+	margin: 50px 0 0 80px;
+}
+/*圆点存放空间*/
+.banner>.banner_right>.hd{
+	height: 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+.banner>.banner_right>.hd ul{
+	overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+.banner>.banner_right>.hd ul li{
+	float: left;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.banner>.banner_right>.hd ul li.on{
+	background: #f00;
+    color: #fff;
+}
+/*轮播图*/
+.banner>.banner_right>.bd{
+	position: relative;
+	width: 100%;
+   overflow: hidden;
+}
+/*控制第一个ul*/
+.bd>ul:first-child{
+	/*ul的宽度=li的数量*屏幕(一张图片)的宽度*/
+	width: 1000%;
+	/*一开始显示第二个li的位置*/
+	/*ul水平向左平移一张图片的位置*/
+	transform:translateX(-10%);
+}
+.bd>ul:first-child>li{
+	/*li的宽度=1/li的数量*/
+	width: 10%;
+	/*排在同一行*/
+	float: left;
+}
+.bd>ul:first-child>li>a>img{
+	width: 100%;
+	/*去除图片的下间距*/
+	display: block;
+}
+/*控制第二个ul*/
+.bd>ul:last-child{
+	/*固定大小*/
+	/*width: 150px;*/
+	width: 118px;
+	height: 6px;
+	/*border: 1px solid #fff;*/
+	position: absolute;
+	left: 50%;
+	bottom: 6px;
+	/*margin-left: -75px;*/
+	margin-left: -43px;
+}
+/*对应的圆点所占的宽度=8*6+8*10-10=48+70=118px*/
+.bd>ul:last-child>li{
+	/*固定大小*/
+	width: 6px;
+	height: 6px;
+	/*排在同一行*/
+	float: left;
+	border: 1px solid #fff;
+	/*圆角*/
+	border-radius: 3px;
+	margin-left: 10px;
+}
+/*第一个圆点不需要左外边距*/
+.bd>ul:last-child>li:nth-child(1){
+	margin-left: 0;
+}
+/*当前圆点*/
+.bd>ul:last-child>li.now{
+	background: #fff;
+}
+/*导航栏*/
+.nav_bar{
+	height: 25px;
+	width: 100%;
+	display:inline-block;
+
+}
+.nav_bar>ul>li>a{
+	float: left;
+	margin-left: 100px;
+	margin-top: 50px;
+	color: #ccc;
+	font-size: 20px;
+}
+.nav_bar>ul>li>a:hover{
+	color: #000;
+}
+/*main内容区*/
+.main{
+	width: 100%;
+	height: 1100px;
+}
+.main1{
+	width: 100%;
+	height: 400px;
+	margin-top: 50px;
+}
+.main>.main1>img{
+	margin-top: 100px;
+}
+.main>.main1>h2{
+	width: 200px;
+	float: right;
+	margin: 140px 400px 0 0;
+}
+.main>.main1>p{
+	width: 400px;
+	color:#7e7c7c;
+	float: right;
+	margin: -200px 200px 0 0;
+
+}
+.main2{
+	width: 100%;
+	height: 400px;
+}
+.main>.main2>h2{
+	width: 200px;
+	margin-top: 100px;
+	float: left;
+}
+.main>.main2>p{
+	width: 430px;
+	color:#7e7c7c;
+	float: left;
+	position: absolute;
+	margin-top: 150px;
+}
+.main>.main2>img{
+	width: 400px;
+	float: right;
+	margin: 80px 70px 0 0;
+}
+.main3{
+	width: 100%;
+	height: 300px;
+}
+.main>.main3>img{
+	width: 400px;
+}
+.main>.main3>h2{
+	width: 200px;
+	float: right;
+	margin: 60px 300px 0 0;
+}
+.main>.main3>p{
+	width: 400px;
+	color:#7e7c7c;
+	float: right;
+	position: relative;
+	margin: 100px -400px 0 0;
+}
+/*footer*/
+.footer{
+	width: 100%;
+	height: 400px;
+	background-image: url(../images/footer.png);
+	position: absolute;
+}
+.footer>h1{
+	color: #fff;
+	font-size: 30px;
+	line-height: 200px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 100px;
+}
+.footer>h2{
+	color:#fff;
+	font-size:25px;
+	font-weight:bold;
+	text-align:center;
+}
+.footer>p{
+	color: #7e7c7c;
+	font-size: 16px;
+	text-align: center;
+}
+

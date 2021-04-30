@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>年刊</title>
+	 <link rel="stylesheet" text="text/css" href="jq/jquery-ui-1.12.0.custom/jquery-ui.css" >
+    <!-- 引入ui插件样式表 -->
+    <script type="text/javascript" src="jq/jquery-ui-1.12.0.custom/external/jquery/jquery.js"></script>
+    <!-- 引入JQ库文件 -->
+    <script type="text/javascript" src="jq/jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+	<style>
+		*{
+	margin:0px;
+	padding: 0px;
+}
+#leftbox{
+	width:50%;
+	background-color: #fcfcfc;
+	height: 600px;
+	box-shadow: 2px 2px 2px #ccc;
+}
+#leftbox>img{
+	display: block;
+	margin:0px auto;
+	padding-top: 50px;
+}
+#leftbox>p{
+	text-align: center;
+	font-size: 15px;
+	color: #6c6c6c;
+}
+.ljo>span{
+	color: #000;
+	font-size:45px;
+	font-weight: bold;
+}
+.gth{
+	font-size: 12px;
+	color:#6c6c6c;
+	margin-top:300px;
+	text-align: center;
+}
+#rightbox{
+	width: 45%;
+	float:right;
+	margin-top:-600px;
+	margin-left: 20px;
+
+}
+#rightbox>.rsf{
+	padding-top:50px; 
+	font-size:18px;
+}
+#rightbox>.nmh{
+	margin-top:15px;
+	font-size: 12px;
+	color: #6c6c6c;
+}
+input{
+	border-radius:10px;
+	height: 40px;
+	width: 60%;
+	border: 1px solid #ccc;
+}
+#Cardinfo{
+	background-image: url("images/card1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position: right;
+}
+#country{
+	border-radius:10px;
+	height: 40px;
+	width: 60%;
+	border: 1px solid #6c6c6c;
+}
+#book{
+	border-radius:10px;
+	height: 40px;
+	width: 60%;
+	border: 1px solid #ccc;
+}
+#book>a{
+	color: #ccc;
+	text-decoration: none;
+}
+.taild{
+	margin-top: 15px;
+	width: 60%;
+	color:#909090;
+	font-size: 12px;
+}
+
+	</style>
+</head>
+<body>
+	<div id="leftbox">
+		<img src="images/logo.PNG" alt="">
+		<p>订阅&nbsp;Brilliant&nbsp;Premium&nbsp;(CNY)</p>
+		<p class="ljo"><span>￥418.00</span><font>每年</font></p>
+		<div class="gth">Powered&nbsp;by&nbsp;<span style="font-weight: bold;color: #696969;">Stripe</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;条款&nbsp;&nbsp;隐私</div>
+	</div>
+	<div id="rightbox">
+		<p class="rsf">用银行卡支付</p>
+		<p class="nmh">邮箱</p>
+		<input type="email" id="email" id="email" >
+		<span class="error_tip"></span>
+		<p class="nmh">卡信息</p>
+		<input type="text" name="Cardinfo" id="Cardinfo" value="" >
+		<span class="error_tip"></span>
+		<p class="nmh">卡片上的名字</p>
+		<input type="text">
+		<p class="nmh">国家或地区</p>
+ 		<Select id="country">
+ 			<option >中国</option>
+ 			<option >美国</option>
+ 			<option >法国</option>
+ 			<option >英国</option>
+ 			<option >俄罗斯</option>
+ 			<option >印度</option>
+ 			<option >澳大利亚</option>
+ 			<option >瑞士</option>
+ 			<option >加拿大</option>
+ 			<option >日本</option>
+ 			<option >新西兰</option>
+ 			<option >韩国</option>
+ 			<option >西班牙</option>
+ 			<option >德国</option>
+ 		</Select>
+		<br><br>
+		<a href="member.html"><button id="book">订阅</button></a>
+		<p class="taild">通过确认您的订阅表示您允许Brilliant Worldwide Inc 依据其条款从您的该银行卡中扣取该笔款项及未来款项。</p>
+	</div>
+	<script type="text/javascript">
+	$(function(){
+		//判断邮箱
+		var flagEmail=false;
+		var $email=$("#email");
+		$email.blur(function(){
+			fnCheckEmail();
+		})
+		function fnCheckEmail(){
+			var valb=$email.val();
+			var re=/^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$/i;
+			if(valb==""){
+				$email.next().show().html("必填").css("color","#f00").css("font-size","10px");
+
+				flagEmail=false;
+				return;
+			}
+			  if(re.test(valb))
+        {
+            // 如果匹配成功，则隐藏span标签
+            $email.next().hide()
+            flagEmail=true;
+        }
+        else
+        {
+            // 如果匹配失败，则显示span标签，替换提示信息
+            $email.next().show().html('你输入的邮箱格式不正确').css("color","#f00").css("font-size","10px");
+            flagEmail=false;
+        }
+    }
+    //判断卡信息
+    var flagCard=false;
+    var $Cardinfo=$("#Cardinfo");
+    $Cardinfo.blur(function(){
+    	fnCheckCardinfo();
+    })
+    function fnCheckCardinfo(){
+    	var varb=$Cardinfo.val();
+
+    	var reMath=/^\d{16,20}$/;
+
+    	if(varb==""){
+    		$Cardinfo.next().show().html("必填").css("color","#f00").css("font-size","10px");
+
+    		flagCard=false;
+    		return;
+    	}
+    	if(reMath.test(varb)){
+ 
+    		$Cardinfo.next().hide();
+   			
+       		flagCard=true;
+    	}
+    	else {
+            // 不合法 -- 报错 -- 下面的span标签显示
+            $Cardinfo.next().show().html("卡信息是16-20位数字！").css("color","#f00").css("font-size","10px");
+            flagCard=false;
+        }
+}
+})
+ 	$("#book").button();
+    </script>
+</body>
+</html>
